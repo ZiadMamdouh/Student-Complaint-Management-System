@@ -1,0 +1,355 @@
+/* ========= Global Style ======== */
+
+:root {
+  --main-color: #3181e9;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========= navbar style ========== */
+.navbar {
+  background-color: var(--main-color);
+  color: white;
+}
+.navbar .nav-link {
+  color: black;
+  margin-right: 1rem;
+  font-size: 18.5px;
+}
+.navbar .nav-link:hover {
+  color: black;
+}
+
+.navbar .nav-link.active {
+  color: white;
+}
+
+/*========= Home page style ========== */
+
+.student-home {
+  flex: 1;
+  background-image: url(./assets/images/Homebg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5); /* لون شفاف فوق الصورة */
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.student-home h2 {
+  color: white;
+}
+
+.student-home .student-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-home .submit-complaint-link {
+  font-size: 30px;
+  color: rgb(22, 3, 129);
+  font-weight: bold;
+}
+
+/*========= contact us page style ========== */
+
+.contact-us , .FQA , .submit-complaint, .complaint-list ,.admin-dashboard , .notification-page,
+.submit-complaint, .complaint-list , .complaint-details-container
+{
+    height: 100%;
+    margin-block: 60px;
+}
+
+.complaint-details-container{
+  height: 100vh;
+}
+
+/*========= Footer style ========== */
+footer {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Complaint */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto;
+ 
+}
+
+.complaint-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.search-box {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+  gap: 10px;
+}
+
+.search_icon {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex-grow: 1;
+}
+
+.filter_icon {
+  padding-right: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0);
+}
+
+.filter_list {
+  --gap: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  translate: -100% -30%;
+  display: flex;
+  gap: var(--gap);
+  border-radius: var(--gap);
+  flex-wrap: wrap;
+  padding: var(--gap);
+  font-size: 15px;
+  background-color: rgba(131, 131, 131, 0.5);
+}
+
+.filter_list-item {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  flex: 1;
+  flex-basis: 40%;
+  user-select: none;
+}
+.complaint-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+.complaint-info {
+  font-size: 14px;
+  color: #555;
+}
+.status {
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+.new {
+  background: var(--main-color);
+}
+.processing {
+  background: #17a2b8;
+  color: white;
+}
+.resolved {
+  background: #28a745;
+  color: white;
+}
+
+.clicked {
+  background-color: bisque;
+  color: black;
+}
+
+.complaint__status {
+  display: none;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.show {
+  display: flex;
+}
+
+.complaint__status-item {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.complaint-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.edit_icon {
+  cursor: pointer;
+}
+
+/* From */
+
+.form {
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+/* BUTTON */
+
+.btn {
+  padding: 5px;
+  border-radius: 5px;
+  /* background-color: burlywood !important; */
+}
+
+
+/* feedback page */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  padding: 30px; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  max-width: 400px; 
+  width: 100%;
+}
+
+
+.feedback-form h2 {
+  color: #3181E9;
+}
+
+
+.feedback-form input,
+.feedback-form textarea 
+{ padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+
+.feedback-form input:focus, 
+.feedback-form textarea:focus {
+  border-color:
+  #3181E9;
+  }
+
+  .feedback-form button {
+  padding: 10px 15px;
+  background-color: #3181E9; color: white;
+  border: none; border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  }
+
+  
+.feedback-form button:hover
+ { background-color: #3181E9;
+}
+
+/* Feedback List Styles */
+.add-rating-button {
+  padding: 8px 12px;
+  background-color: #3181E9;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.add-rating-button:hover {
+  background-color: #1a60c2;
+}
+
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 82.8vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 32px;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.no-feedback {
+  font-size: 18px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.feedback-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.feedback-card {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  width: 100%; /* Full width */
+  text-align: right; /* Align text to the right */
+  direction: rtl; /* Set text direction to right-to-left */
+}
+
+
+.feedback-card h3 {
+  margin: 0;
+  color:   #3181E9;
+  }
+
+.feedback-card p {
+  margin: 5px 0 0;
+  color: #666;
+  }
