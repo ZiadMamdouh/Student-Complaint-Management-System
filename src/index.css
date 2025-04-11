@@ -20,8 +20,9 @@ body,
 }
 .navbar .nav-link {
   color: black;
-  margin-right: 1rem;
-  font-size: 18.5px;
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .navbar .nav-link:hover {
   color: black;
